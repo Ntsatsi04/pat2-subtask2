@@ -2,7 +2,6 @@
 
  #include <iostream>
 
-
 using namespace std;
 
 int main()
@@ -29,5 +28,15 @@ string code[26] =
         // Check if character is a letter
         if(ch >= 'A' && ch <= 'Z')
         {
+         int index = ch - 'A';
+
+            cout << ch << ": " << code[index] << endl;
+
+            morse += code[index] + "   ";
+        }
+    }
+
+    cout << "Full Morse Message:";
+    cout << morse << endl;
     
-return 0;)
+return 0;}
